@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Henrique Ledo",
+    "foto": "",
+    "bio": "Biólogo, doutor em Recursos Naturais pela UEMS. Trabalha com caracterização geoambiental e limnologia integrada a SIG, e concebeu as rotinas de automação."
+  },
+  {
+    "nome": "Yzel Suárez",
+    "foto": "",
+    "bio": "Biólogo, doutor em Zoologia pela UNESP, professor da UEMS e bolsista de produtividade do CNPq. Pesquisa ecologia de ambientes aquáticos e ecologia quantitativa."
+  },
+  {
+    "nome": "Jéssica Bassani",
+    "foto": "",
+    "bio": "Doutora em Recursos Naturais, mestre em Ciência da Computação pela UFMA e professora de Engenharia de Software na UEMS. Responsável pelo desenvolvimento."
+  }
+]

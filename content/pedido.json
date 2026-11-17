@@ -1,0 +1,29 @@
+{
+  "titulo": "Fazer um pedido",
+  "texto": "Preencha os campos e cole o link da pasta do Google Drive com os arquivos. A resposta vai para o e-mail que você informar.",
+  "opcoes_servico": [
+    "HED-ECA (bacias sem sobreposição)",
+    "BufScale (buffers em várias distâncias)",
+    "Raster Scan (classes por área)",
+    "Os três em sequência",
+    "Ainda não sei"
+  ],
+  "dica_drive": "Opcional neste momento. Se os arquivos forem pequenos (até 25 MB), também podem ir por e-mail.",
+  "aviso": {
+    "titulo": "Uso e guarda dos dados",
+    "texto": "Os arquivos enviados são usados apenas para executar o serviço solicitado.\n\nDepois da entrega, os dados de entrada e os resultados ficam guardados por 90 dias, para ajustes ou reprocessamento sem reenvio. Depois disso, são excluídos.\n\nPara pedir a exclusão antes do prazo, escreva para o e-mail de contato."
+  },
+  "compartilhar": {
+    "titulo": "Compartilhando a pasta",
+    "passos": [
+      "Coloque os arquivos numa pasta do Drive.",
+      "Em Compartilhar, adicione o e-mail de contato como leitor.",
+      "Copie o link da pasta e cole no formulário."
+    ]
+  },
+  "sucesso": {
+    "titulo": "Pedido recebido",
+    "texto": "Verifique se a pasta do Drive está compartilhada com o nosso e-mail. Sem acesso à pasta, não conseguimos conferir os arquivos."
+  },
+  "assunto_email": "Novo pedido pelo site Sintropik Geo"
+}

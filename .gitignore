@@ -1,0 +1,12 @@
+# Windows e Google Drive
+desktop.ini
+Thumbs.db
+*.tmp
+~$*
+.~lock.*
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/

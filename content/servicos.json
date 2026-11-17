@@ -1,0 +1,57 @@
+{
+  "titulo": "Serviços",
+  "texto": "Os três podem ser contratados separados ou em sequência: primeiro as bacias de cada ponto, depois os buffers dentro delas e, por fim, a contagem de classes do mapa de uso do solo.",
+  "itens": [
+    {
+      "id": "hedeca",
+      "nome": "HED-ECA",
+      "categoria": "Delimitação hidrológica",
+      "resumo": "Uma bacia por ponto, sem sobreposição. Quando a bacia de um ponto contém a de outro, a área repetida é removida seguindo a elevação, e cada ponto fica só com a área que drena para ele.",
+      "descricao": "Delimita a bacia de cada exutório com o GRASS (r.watershed e r.water.outlet) e calcula a elevação mínima de cada uma. Depois aplica a diferença entre bacias sobrepostas, da maior elevação para a menor. No fim, cada ponto fica com a área que drena só para ele, e nenhuma área é contada duas vezes.",
+      "detalhes": [
+        { "rotulo": "Você envia", "texto": "MDE (.tif) já corrigido, coordenadas dos exutórios (.txt, x,y) e pontos de coleta (.shp)" },
+        { "rotulo": "Você recebe", "texto": "Área de influência de cada ponto (.shp), direção de drenagem e estatística zonal por bacia" },
+        { "rotulo": "Atenção", "texto": "Todos os arquivos no mesmo sistema de coordenadas projetado, como UTM" }
+      ],
+      "nota": "",
+      "imagem": "assets/img/hedeca.jpg",
+      "legenda": "Bacias sobrepostas, hierarquia por elevação e áreas exclusivas",
+      "tem_plugin": true
+    },
+    {
+      "id": "bufscale",
+      "nome": "BufScale",
+      "categoria": "Recortes multiescala",
+      "resumo": "Buffers circulares e ripários em várias distâncias, todas definidas numa planilha. Cada buffer é recortado pela bacia do seu ponto, e os que passam do limite da bacia ficam separados.",
+      "descricao": "Lê as distâncias de uma planilha e gera os buffers de todos os pontos em lote. Cada buffer é recortado pela bacia do seu ponto. Os que ficam maiores que a bacia vão para uma pasta separada, para não entrarem na análise por engano.",
+      "detalhes": [
+        { "rotulo": "ECA", "texto": "Área de contribuição exclusiva do ponto, com a área calculada" },
+        { "rotulo": "RB", "texto": "Buffer ripário ao longo da drenagem, dentro da bacia" },
+        { "rotulo": "LCA", "texto": "Buffer circular em torno do ponto, recortado pela bacia" },
+        { "rotulo": "RBLCA", "texto": "Buffer ripário apenas dentro da LCA" }
+      ],
+      "nota": "Você envia os polígonos das bacias, os pontos (.shp), a drenagem ou o corpo d'água (linha ou polígono) e a planilha de distâncias. Sem os polígonos, o HED-ECA gera antes.",
+      "imagem": "assets/img/bufscale.jpg",
+      "legenda": "Produtos ECA, RB, LCA e RBLCA de um mesmo ponto",
+      "tem_plugin": true
+    },
+    {
+      "id": "raster",
+      "nome": "Raster Scan",
+      "categoria": "Varredura de imagem",
+      "resumo": "Área e porcentagem de cada classe de um mapa de uso do solo, vegetação ou solo dentro de cada bacia ou buffer, em tabelas, planilhas e gráficos.",
+      "descricao": "Sobrepõe um mapa temático já classificado (uso da terra, solo, vegetação) a todas as bacias ou buffers e conta quanto há de cada classe em cada polígono.",
+      "detalhes": [
+        { "rotulo": "Você envia", "texto": "O raster classificado e os polígonos das áreas de interesse" },
+        { "rotulo": "Você recebe", "texto": "Área e porcentagem por classe em cada polígono, mapas, tabelas, planilhas resumidas e gráficos comparando as áreas" },
+        { "rotulo": "Plugin", "texto": "Não tem. Disponível só como serviço" }
+      ],
+      "nota": "",
+      "imagem": "assets/img/rasterscan.jpg",
+      "legenda": "Exemplo de tabelas e gráficos por classe",
+      "tem_plugin": false
+    }
+  ],
+  "rodape_chamada": "Em dúvida sobre qual serviço usar?",
+  "rodape_link": "Descreva o estudo no formulário"
+}

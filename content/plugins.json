@@ -1,0 +1,40 @@
+{
+  "titulo": "Plugins QGIS",
+  "texto": "Versões em plugin de Processing do HED-ECA e do BufScale. São gratuitas, com licença GNU GPL v2 ou posterior, e rodam no QGIS 3.34 ou mais recente, no Windows e no Linux.",
+  "itens": [
+    {
+      "nome": "Hierarchical Watershed Difference",
+      "versao": "1.0.0",
+      "servico": "Versão em plugin do HED-ECA",
+      "descricao": "Delimita a bacia de cada exutório e remove as áreas sobrepostas, priorizando as bacias de maior elevação. Gera a área de influência de cada ponto.",
+      "requisitos": "Provedor GRASS ativo no Processing",
+      "caminho_qgis": "Processing › Hierarchical Watershed Difference › Hydrology",
+      "zip": "downloads/hierarchical_watershed_difference.zip",
+      "github": "https://github.com/sintropikgeo/hierarchical-watershed-difference",
+      "repositorio_oficial": ""
+    },
+    {
+      "nome": "Dynamic Multiscale Buffer Generator",
+      "versao": "1.0.0",
+      "servico": "Versão em plugin do BufScale",
+      "descricao": "Gera buffers circulares e ripários em várias distâncias para cada ponto, lendo as distâncias de uma planilha, e recorta tudo pela bacia de cada ponto.",
+      "requisitos": "Pacotes Python pandas e openpyxl; planilha .xlsx com as colunas Step e Meters",
+      "caminho_qgis": "Processing › Dynamic Multiscale Buffer Generator › Multiscale buffers",
+      "zip": "downloads/dynamic_multiscale_buffer_generator.zip",
+      "github": "https://github.com/sintropikgeo/dynamic-multiscale-buffer-generator",
+      "repositorio_oficial": ""
+    }
+  ],
+  "instalar": {
+    "titulo": "Instalação pelo .zip",
+    "texto": "Enquanto os plugins não estão no repositório oficial do QGIS, a instalação é feita pelo arquivo.",
+    "passos": [
+      "Baixe o .zip do plugin nesta página.",
+      "No QGIS, abra Complementos › Gerenciar e instalar complementos.",
+      "Escolha Instalar a partir do ZIP, selecione o arquivo e confirme.",
+      "O algoritmo aparece na Caixa de Ferramentas de Processamento."
+    ]
+  },
+  "rodape_chamada": "Prefere que a gente processe?",
+  "rodape_link": "Faça um pedido pelo formulário"
+}

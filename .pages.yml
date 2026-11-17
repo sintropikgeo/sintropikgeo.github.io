@@ -1,0 +1,191 @@
+# Configuração do admin (Pages CMS: https://app.pagescms.org)
+# Cada bloco abaixo vira um item no menu do admin.
+# Só quem tem acesso ao GitHub consegue alterar este arquivo.
+
+media:
+  input: assets/img
+  output: assets/img
+
+content:
+  - name: site
+    label: Geral (contato, botão de pedido, rodapé)
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: nome, label: Nome do site, type: string }
+      - { name: descricao, label: Descrição curta, type: text }
+      - { name: logo, label: Logo, type: image }
+      - { name: email, label: E-mail de contato (recebe os pedidos), type: string }
+      - { name: github, label: Link do GitHub, type: string }
+      - { name: cidade, label: Cidade, type: string }
+      - name: botao_pedido
+        label: Botão de pedido
+        type: object
+        fields:
+          - { name: texto, label: Texto do botão, type: string }
+          - { name: destino, label: "Link do botão (hoje: pedido.html)", type: string }
+      - name: rodape
+        label: Rodapé
+        type: object
+        fields:
+          - { name: chamada, label: Frase do rodapé, type: string }
+          - { name: link_texto, label: Texto do link, type: string }
+      - { name: apoio_titulo, label: Título da faixa de apoio, type: string }
+      - name: apoio
+        label: Instituições de apoio
+        type: object
+        list: true
+        fields:
+          - { name: nome, label: Nome, type: string }
+
+  - name: inicio
+    label: Página inicial
+    type: file
+    path: content/inicio.json
+    format: json
+    fields:
+      - name: topo
+        label: Topo
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: text }
+          - { name: texto, label: Texto de apoio, type: text }
+          - { name: botao_principal, label: Texto do botão principal, type: string }
+          - { name: botao_secundario, label: Texto do link secundário, type: string }
+          - { name: imagem, label: Imagem, type: image }
+          - { name: imagem_descricao, label: Descrição da imagem (acessibilidade), type: string }
+          - { name: legenda, label: Legenda da imagem, type: string }
+      - name: servicos
+        label: Bloco de serviços
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+      - name: passos
+        label: Como funciona
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - name: itens
+            label: Passos
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Título, type: string }
+              - { name: texto, label: Texto, type: text }
+      - name: plugins
+        label: Bloco de plugins
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+          - { name: link_texto, label: Texto do link, type: string }
+      - { name: equipe_titulo, label: Título da equipe, type: string }
+
+  - name: servicos
+    label: Serviços
+    type: file
+    path: content/servicos.json
+    format: json
+    fields:
+      - { name: titulo, label: Título da página, type: string }
+      - { name: texto, label: Texto de abertura, type: text }
+      - name: itens
+        label: Serviços
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: id, label: "Identificador (sem espaços, usado no link)", type: string }
+          - { name: nome, label: Nome, type: string }
+          - { name: categoria, label: Categoria, type: string }
+          - { name: resumo, label: Resumo (página inicial), type: text }
+          - { name: descricao, label: Descrição completa, type: text }
+          - name: detalhes
+            label: Tabela de detalhes
+            type: object
+            list: true
+            fields:
+              - { name: rotulo, label: Rótulo, type: string }
+              - { name: texto, label: Texto, type: text }
+          - { name: nota, label: Nota abaixo da tabela, type: text }
+          - { name: imagem, label: Imagem, type: image }
+          - { name: legenda, label: Legenda da imagem, type: string }
+          - { name: tem_plugin, label: Tem plugin gratuito, type: boolean }
+      - { name: rodape_chamada, label: Frase do rodapé desta página, type: string }
+      - { name: rodape_link, label: Texto do link do rodapé, type: string }
+
+  - name: plugins
+    label: Plugins
+    type: file
+    path: content/plugins.json
+    format: json
+    fields:
+      - { name: titulo, label: Título da página, type: string }
+      - { name: texto, label: Texto de abertura, type: text }
+      - name: itens
+        label: Plugins
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: nome, label: Nome, type: string }
+          - { name: versao, label: Versão, type: string }
+          - { name: servico, label: Serviço correspondente, type: string }
+          - { name: descricao, label: Descrição, type: text }
+          - { name: requisitos, label: Requisitos, type: text }
+          - { name: caminho_qgis, label: Onde fica no QGIS, type: string }
+          - { name: zip, label: "Arquivo .zip (pasta downloads/)", type: string }
+          - { name: github, label: Link do GitHub, type: string }
+          - { name: repositorio_oficial, label: "Link no plugins.qgis.org (quando aprovado; substitui o botão do .zip)", type: string }
+      - name: instalar
+        label: Instruções de instalação
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+          - { name: passos, label: Passos, type: string, list: true }
+      - { name: rodape_chamada, label: Frase do rodapé desta página, type: string }
+      - { name: rodape_link, label: Texto do link do rodapé, type: string }
+
+  - name: equipe
+    label: Equipe
+    type: file
+    path: content/equipe.json
+    format: json
+    list: true
+    fields:
+      - { name: nome, label: Nome, type: string }
+      - { name: foto, label: Foto (opcional), type: image }
+      - { name: bio, label: Texto, type: text }
+
+  - name: pedido
+    label: Página de pedido
+    type: file
+    path: content/pedido.json
+    format: json
+    fields:
+      - { name: titulo, label: Título, type: string }
+      - { name: texto, label: Texto de abertura, type: text }
+      - { name: opcoes_servico, label: Opções do campo Serviço, type: string, list: true }
+      - { name: dica_drive, label: Dica abaixo do campo do Drive, type: text }
+      - name: aviso
+        label: Uso e guarda dos dados
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: "Texto (linha em branco separa parágrafos)", type: text }
+      - name: compartilhar
+        label: Como compartilhar a pasta
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: passos, label: Passos, type: string, list: true }
+      - name: sucesso
+        label: Mensagem depois do envio
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+      - { name: assunto_email, label: Assunto do e-mail que chega, type: string }

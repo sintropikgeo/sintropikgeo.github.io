@@ -1,0 +1,22 @@
+{
+  "nome": "Sintropik Geo",
+  "descricao": "Delimitação de bacias, buffers multiescala e análise de uso do solo para muitos pontos de monitoramento de uma vez.",
+  "logo": "assets/img/logo.jpg",
+  "email": "sintropik.geo@gmail.com",
+  "github": "https://github.com/sintropikgeo",
+  "cidade": "Dourados, MS",
+  "botao_pedido": {
+    "texto": "Fazer um pedido",
+    "destino": "pedido.html"
+  },
+  "rodape": {
+    "chamada": "Tem um estudo em andamento?",
+    "link_texto": "Faça um pedido pelo formulário"
+  },
+  "apoio_titulo": "Desenvolvido na",
+  "apoio": [
+    { "nome": "Universidade Estadual de Mato Grosso do Sul (UEMS), Dourados" },
+    { "nome": "GEAAQUA, Laboratório de Estudos em Ambientes Aquáticos" },
+    { "nome": "PGRN, Programa de Pós-Graduação em Recursos Naturais" }
+  ]
+}

@@ -4,7 +4,6 @@
     "texto": "Automatizamos o geoprocessamento que normalmente é feito ponto a ponto no QGIS. Num teste com 200 delimitações, o trabalho manual levou cerca de um mês. Com as nossas rotinas, a entrega saiu em até 24 horas.",
     "botao_principal": "Enviar seus dados",
     "botao_secundario": "Ver os serviços",
-    "imagem": "assets/img/Infografico_Ajustando.png",
     "imagem_descricao": "Infográfico",
     "legenda": "Portifólio"
   },

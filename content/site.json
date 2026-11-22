@@ -1,7 +1,7 @@
 {
   "nome": "Sintropik Geo",
   "descricao": "Delimitação de bacias, buffers multiescala e análise de uso do solo para muitos pontos de monitoramento de uma vez.",
-  "logo": "assets/img/logo.jpg",
+  "logo": "assets/img/Monograma SG com Circuitos Neon-1.png",
   "email": "sintropik.geo@gmail.com",
   "github": "https://github.com/sintropikgeo",
   "cidade": "Dourados, MS",
@@ -15,8 +15,14 @@
   },
   "apoio_titulo": "Desenvolvido na",
   "apoio": [
-    { "nome": "Universidade Estadual de Mato Grosso do Sul (UEMS), Dourados" },
-    { "nome": "GEAAQUA, Laboratório de Estudos em Ambientes Aquáticos" },
-    { "nome": "PGRN, Programa de Pós-Graduação em Recursos Naturais" }
+    {
+      "nome": "Universidade Estadual de Mato Grosso do Sul (UEMS), Dourados"
+    },
+    {
+      "nome": "GEAAQUA, Laboratório de Estudos em Ambientes Aquáticos"
+    },
+    {
+      "nome": "PGRN, Programa de Pós-Graduação em Recursos Naturais"
+    }
   ]
 }

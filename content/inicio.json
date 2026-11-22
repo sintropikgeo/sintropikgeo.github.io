@@ -4,9 +4,9 @@
     "texto": "Automatizamos o geoprocessamento que normalmente é feito ponto a ponto no QGIS. Num teste com 200 delimitações, o trabalho manual levou cerca de um mês. Com as nossas rotinas, a entrega saiu em até 24 horas.",
     "botao_principal": "Enviar seus dados",
     "botao_secundario": "Ver os serviços",
-    "imagem": "assets/img/logo.jpg",
-    "imagem_descricao": "Bacia hidrográfica dividida em áreas de contribuição coloridas, com a rede de drenagem em azul",
-    "legenda": "Fig. 1 · Áreas de contribuição de cada ponto ao longo da drenagem"
+    "imagem": "assets/img/Infografico_Ajustando.png",
+    "imagem_descricao": "Infográfico",
+    "legenda": "Portifólio"
   },
   "servicos": {
     "titulo": "Serviços",
@@ -15,10 +15,22 @@
   "passos": {
     "titulo": "Como funciona um pedido",
     "itens": [
-      { "titulo": "Formulário", "texto": "Você descreve o estudo e cola o link de uma pasta do Google Drive com os arquivos." },
-      { "titulo": "Conferência", "texto": "Checamos projeção, formatos e colunas, e respondemos por e-mail com prazo e condições." },
-      { "titulo": "Processamento", "texto": "Rodamos todos os pontos de uma vez, com as distâncias e parâmetros combinados." },
-      { "titulo": "Entrega", "texto": "Você recebe um .zip com shapefiles, tabelas e mapas. Os arquivos ficam guardados por 90 dias para ajustes." }
+      {
+        "titulo": "Formulário",
+        "texto": "Você descreve o estudo e cola o link de uma pasta do Google Drive com os arquivos."
+      },
+      {
+        "titulo": "Conferência",
+        "texto": "Checamos projeção, formatos e colunas, e respondemos por e-mail com prazo e condições."
+      },
+      {
+        "titulo": "Processamento",
+        "texto": "Rodamos todos os pontos de uma vez, com as distâncias e parâmetros combinados."
+      },
+      {
+        "titulo": "Entrega",
+        "texto": "Você recebe um .zip com shapefiles, tabelas e mapas. Os arquivos ficam guardados por 90 dias para ajustes."
+      }
     ]
   },
   "plugins": {
